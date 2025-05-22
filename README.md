@@ -11,6 +11,10 @@ Localloop is a mobile app that allows users to:
 - Save favorite places to have access offline to your information
 - Work offline, loading visited places and recent opinions from cache
 
+## Github Actions tests Status
+
+![Tests](https://github.com/AEVegaEngineer/LocalLoop-App/actions/workflows/test.yml/badge.svg)
+
 ## Getting Started
 
 ### Running Unit Tests
