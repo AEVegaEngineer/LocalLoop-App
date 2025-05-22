@@ -1,12 +1,21 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, Pressable } from "react-native";
 import { FlashList } from "@shopify/flash-list";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import { ExploreStackParamList } from "../navigation/types";
+import { useNavigation } from "@react-navigation/native";
 
 interface Business {
   id: string;
   title: string;
   description: string;
 }
+
+type ExploreScreenNavigationProp = NativeStackNavigationProp<
+  ExploreStackParamList,
+  "ExploreList"
+>;
+
 // Temporary fake data
 const FAKE_DATA = Array(50)
   .fill(0)
@@ -17,11 +26,16 @@ const FAKE_DATA = Array(50)
   }));
 
 export const ExploreScreen = () => {
+  const navigation = useNavigation<ExploreScreenNavigationProp>();
+
   const renderItem = ({ item }: { item: Business }) => (
-    <View style={styles.item}>
+    <Pressable
+      style={styles.item}
+      onPress={() => navigation.navigate("BusinessDetail", { id: item.id })}
+    >
       <Text style={styles.title}>{item.title}</Text>
       <Text>{item.description}</Text>
-    </View>
+    </Pressable>
   );
 
   return (
