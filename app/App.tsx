@@ -2,9 +2,9 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { ExploreStack } from "./src/navigation/ExploreStack";
-import { MapScreen } from "./src/screens/MapScreen";
-import { FavoritesScreen } from "./src/screens/FavoritesScreen";
+import { ExploreStack } from "./navigation/ExploreStack";
+import { MapScreen } from "../domain/map/screens/MapScreen";
+import { FavoritesScreen } from "../domain/businesses/screens/FavoritesScreen";
 import { StatusBar } from "expo-status-bar";
 
 const Tab = createBottomTabNavigator();

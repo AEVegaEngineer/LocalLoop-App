@@ -1,8 +1,8 @@
 import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { ExploreScreen } from "../screens/ExploreScreen";
-import { BusinessDetailScreen } from "../screens/BusinessDetailScreen";
-import { AddOpinionScreen } from "../screens/AddOpinionScreen";
+import { ExploreScreen } from "../../domain/businesses/screens/ExploreScreen";
+import { BusinessDetailScreen } from "../../domain/businesses/screens/BusinessDetailScreen";
+import { AddOpinionScreen } from "../../domain/opinion/screens/AddOpinionScreen";
 
 const Stack = createNativeStackNavigator();
 

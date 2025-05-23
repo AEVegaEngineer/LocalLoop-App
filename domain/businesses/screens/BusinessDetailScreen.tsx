@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Pressable } from "react-native";
 import Animated, { FadeIn } from "react-native-reanimated";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { RouteProp, useNavigation, useRoute } from "@react-navigation/native";
-import { ExploreStackParamList } from "../navigation/types";
+import { ExploreStackParamList } from "../../../app/navigation/types";
 
 type BusinessDetailScreenNavigationProp = NativeStackNavigationProp<
   ExploreStackParamList,

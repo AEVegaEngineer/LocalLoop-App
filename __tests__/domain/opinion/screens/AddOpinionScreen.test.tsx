@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react-native";
-import { AddOpinionScreen } from "../../src/screens/AddOpinionScreen";
+import { AddOpinionScreen } from "../../../../domain/opinion/screens/AddOpinionScreen";
 
 describe("AddOpinionScreen", () => {
   it("renders the title correctly", () => {

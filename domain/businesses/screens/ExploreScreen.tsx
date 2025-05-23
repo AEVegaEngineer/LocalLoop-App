@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text, Pressable } from "react-native";
 import { FlashList } from "@shopify/flash-list";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { ExploreStackParamList } from "../navigation/types";
+import { ExploreStackParamList } from "../../../app/navigation/types";
 import { useNavigation } from "@react-navigation/native";
 
 interface Business {
