@@ -1,6 +1,7 @@
 {
   "name": "localloop",
   "version": "1.0.0",
+  "license": "MIT",
   "main": "index.ts",
   "scripts": {
     "start": "expo start",
